@@ -35,10 +35,18 @@ $form.addEventListener('submit', (e) => {
   $reservation.innerHTML = targetUser.number;
 });
 
-
 /*
-구글링 키워드
-#6 querySelector(["[name='user-name']"]) 의미(qeurySelector 사용시 ["[]"]를 사용하는 경우)
-#17 javascript addEventListener에서 e.target.value와 e.value의 차이점
-#19~21 정규표현식 사용법
+=> 코드 분석
+    NodeUserListInReservationList()는 일치하는 내역이 없을 때 알려주는 함수
+
+    $userPhonInput의 이벤트는 사용자가 입력한 핸드폰 번호의 양식 일치를 위한 함수인 것 같다.
+    
+    $form의 이벤트는 실제 data와 입력값이 일치하는지 알려주는 핵심함수
+      우선 일치하는 이름이 있는지 확인하고 없다면 NodeUserListInReservationList()
+      이름이 일치한다면 핸드폰 번호도 일치하는지 확인하는 코드
+
+=> 구글링 키워드
+    #6 querySelector(["[name='user-name']"]) 의미(querySelector 사용시 ["[]"]를 사용하는 경우)
+    #17 javascript addEventListener에서 e.target.value와 e.value의 차이점
+    #19~21 정규표현식 사용법
 */
