@@ -14,7 +14,7 @@ console.log(RESERVATION_LIST);
     - 예약번호 확인 버튼 이벤트
 
 3. 인풋 바탕으로 단계별 한글로 함수 설계하기
-    1 DOM API를 통해 각각 이름, 연락처의 input태그와 예약번호를 뿌려줄 p태그 가져오기
+    1 DOM API를 통해 각각 이름, 연락처의 input태그와 예약번호를 뿌려줄 p태그(reservation-number) 가져오기
     2 해당 태그 value들을 가지고 와 RESERVATION_LIST의 값과 비교하는 함수만들기
     3 함수는 인자로 이름 value, 연락처 value를 가지고 온다
     4 그리고 해당 값과 LIST의 모든 index의 name, phone 값과 비교한다

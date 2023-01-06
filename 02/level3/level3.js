@@ -67,6 +67,11 @@ $button.addEventListener('click', () => {
       #45 children이 있을 경우 왜 $list.innerHTML이 공란이지????? 0보다 작을때 해줘야하는거 아닌가?
       #48 forEach의 경우 Map에는 key가 재료명 value가 무게로 들어가 있을 텐데 인자로 (weight, ingredient)순서로 들어간 이유는?
 
+=> 내 한글 설계와 차이점
+    입력값을 key&value로 저장하여 관리했다 new Map();
+    그 외 <form>에 대한 이해 부족, submit 고려 X, 값을 계속 저장한다 등
+    Map()이 아닌 단순 빈 배열로 저장하여 보관한다면 객체를 담은 배열로 저장시켜야하나? 그럼 결국 Map()을 알 경우가 되는건가..
+
 => 구글링 키워드
     #14 matches함수
     #15 closest함수 => this의 빌트인 함수

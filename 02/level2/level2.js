@@ -45,8 +45,12 @@ $form.addEventListener('submit', (e) => {
       우선 일치하는 이름이 있는지 확인하고 없다면 NodeUserListInReservationList()
       이름이 일치한다면 핸드폰 번호도 일치하는지 확인하는 코드
 
+=> 내 한글 설계와 차이점
+    <form>이 submit되었을 때를 고려하지 않음, <form>안에 button만 default값이 submit인가?
+
 => 구글링 키워드
     #6 querySelector(["[name='user-name']"]) 의미(querySelector 사용시 ["[]"]를 사용하는 경우)
     #17 javascript addEventListener에서 e.target.value와 e.value의 차이점
     #19~21 정규표현식 사용법
+    button의 default값이 submit인 조건
 */
