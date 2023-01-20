@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판</title>
+    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/pageable@latest/dist/pageable.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/cursor.css" />
+    <link rel="stylesheet" href="./css/board.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script defer src="./js/fullPage.js"></script>
+    <script defer src="./js/cursor.js"></script>
+    <script defer src="./components/header.js"></script>
+    <script defer type="module" src="./js/board.js"></script>
+  </head>
+
+  <body>
+    <!-- wrapper start -->
+    <div>
+      <!-- cursor start -->
+      <div class="cursor"></div>
+      <!-- cursor end -->
+      <!-- header start -->
+      <header></header>
+      <!-- header end -->
+      <!-- fullPage content start -->
+      <div class="board-content">
+        <!-- board-write area  start -->
+        <section data-anchor="board-write" class="pg-page flex-center">
+          <!-- board write form start -->
+          <form class="board-write-form flex-center">
+            <div>
+              <h1>Title</h1>
+              <input type="text" placeholder="please, enter the title" name="board-title" />
+            </div>
+            <div>
+              <h1>Content</h1>
+              <textarea placeholder="please, enter the cotnent" name="board-content"></textarea>
+            </div>
+            <div>
+              <button>save</button>
+              <button type="reset">reset</button>
+            </div>
+          </form>
+          <!-- board write fortm end -->
+        </section>
+        <!-- board-write area  end -->
+        <!-- board-list area  start -->
+        <section data-anchor="board-list" class="pg-page pg-active flex-center">
+          <!-- board list container start -->
+          <div class="board-list-container">
+            <h2>Board List</h2>
+            <div class="board-list flex-align-center"></div>
+          </div>
+          <!-- board list container end -->
+        </section>
+        <!-- board-list area  end -->
+        <!-- board-detail area start -->
+        <section data-anchor="board-detail" class="pg-page flex-center">
+          <!-- board-detail container start -->
+          <div class="board-detail-container flex-center">
+            <h2>Title</h2>
+            <div class="flex-center">Content</div>
+          </div>
+          <!-- board-detail container end -->
+        </section>
+        <!-- board-detail area end -->
+      </div>
+      <!-- fullPage content end -->
+    </div>
+    <!-- wrapper end -->
+  </body>
+  
+</html>

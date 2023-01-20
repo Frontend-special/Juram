@@ -1,0 +1,137 @@
+body {
+  cursor: none;
+  background: rgb(27, 27, 27);
+  color: #fff;
+}
+
+section {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+/* board write */
+
+.board-write-form {
+  width: 80%;
+  flex-direction: column;
+}
+.board-write-form > div {
+  margin: 10px 0;
+}
+
+.board-write-form h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.board-write-form input[type='text'] {
+  width: 800px;
+  height: 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.board-write-form textarea {
+  resize: none;
+  width: 800px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.board-write-form button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin: 10px auto;
+}
+
+.board-write-form button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* board list */
+
+.board-list-container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.board-list-container > h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.board-list {
+  flex-direction: column;
+  width: 80%;
+  min-height: 500px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.board-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.board-list::-webkit-scrollbar-track {
+  background-color: #999999;
+}
+.board-list::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 0 0 8px 8px;
+}
+
+.board-list-card {
+  /* width: 80%; */
+  /* 왜 80%인데도 조그말까.. 일단 변경 */
+  width: 600px;
+  min-height: 100px;
+  border: 1px solid #fff;
+  margin: 10px 0;
+  /* position: relative; */
+}
+
+.board-list-card:hover {
+  transform: scale(1.1);
+}
+
+.board-list-card h3 {
+  height: 20px;
+  background-color: #fff;
+  color: #222;
+}
+
+.board-list-card div {
+  height: 80px;
+}
+
+/* board detail */
+
+.board-detail-container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.board-detail-container > h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.board-detail-container > div {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+}
